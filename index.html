@@ -1,0 +1,1024 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans-TW" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 把 charset 的 meta tag 調到最前面 -->
+
+    <!-- fb -->
+    <meta name="title" content="崑山網路大學">
+    <meta name="description" property="og:description" content="旭聯科技-15年線上學習專家．50%政府單位佔有率．80%大專院校佔有率．給你最專業、最便利、最多元的線上教學課程。"/>
+    <meta property="og:site_name" content="崑山網路大學">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="崑山網路大學">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/base/10001/door/tpl/logo.png">
+    <meta property="og:description" content="旭聯科技-15年線上學習專家．50%政府單位佔有率．80%大專院校佔有率．給你最專業、最便利、最多元的線上教學課程。">
+    <link href="https://elearning2.ksu.edu.tw/base/10001/door/tpl/logo.png" rel="image_src" type="image/jpeg">
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="崑山網路大學">
+    <meta name="twitter:description" content="旭聯科技-15年線上學習專家．50%政府單位佔有率．80%大專院校佔有率．給你最專業、最便利、最多元的線上教學課程。">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:image:src" content="https://elearning2.ksu.edu.tw/base/10001/door/tpl/logo.png">
+
+    <title>登入介面</title>
+                    <link href="https://elearning2.ksu.edu.tw/theme/default/bootstrap336/css/bootstrap.min.css" rel="stylesheet" />
+                <link rel="stylesheet" href="https://elearning2.ksu.edu.tw/sys/tpl/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://elearning2.ksu.edu.tw/sys/tpl/css/theme.css">
+        <link href="https://elearning2.ksu.edu.tw/public/css/application.css?e1654211" rel="stylesheet" />
+    <link href="https://elearning2.ksu.edu.tw/theme/default/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://elearning2.ksu.edu.tw/lib/jquery/jquery.mSimpleSlidebox.css">
+    <link rel="icon" href="https://elearning2.ksu.edu.tw/base/10001/door/tpl/icon.ico">
+    <link href="https://elearning2.ksu.edu.tw/public/css/common.css?e1654211" rel="stylesheet" />
+                                    <link href="https:/elearning2.ksu.edu.tw/public/css/orange/index1.css?e1654211" rel="stylesheet" />
+                    
+        <script type="text/javascript" src="https://elearning2.ksu.edu.tw/lib/modernizr/modernizr.min.js"></script>
+                	        <script type="text/javascript" src="https://elearning2.ksu.edu.tw/lib/jquery/jquery.new.min.js"></script>
+	        <script type="text/javascript" src="https://elearning2.ksu.edu.tw/theme/default/bootstrap336/js/bootstrap.min.js"></script>
+	            <script type="text/javascript" src="https://elearning2.ksu.edu.tw/theme/default/fancybox/jquery.fancybox.pack.js?20241212"></script>
+    <script type="text/javascript" src="https://elearning2.ksu.edu.tw/lib/jquery/jquery.mSimpleSlidebox.js"></script>
+    <script type="text/javascript" src="https://elearning2.ksu.edu.tw/public/js/third_party/jquery-placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="https://elearning2.ksu.edu.tw/public/js/third_party/jquery-message-box/messagebox.min.js"></script>
+    <script type="text/javascript" src="https://elearning2.ksu.edu.tw/public/js/third_party/bootbox/bootbox.min.js"></script>
+    <script type="text/javascript" src="https://elearning2.ksu.edu.tw/lib/jquery/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        var appRoot = '',
+            portalUrl = 'SYS_PORTAL_HOME_URL',
+            generalDomain = 'elearning2.ksu.edu.tw',
+            metaTitle = '崑山網路大學',
+            metaDescription = '旭聯科技-15年線上學習專家．50%政府單位佔有率．80%大專院校佔有率．給你最專業、最便利、最多元的線上教學課程。',
+            isPhoneDevice = '';
+    </script>
+</head>
+<body>
+<link href="https://elearning2.ksu.edu.tw/public/css/school.css" rel="stylesheet" />
+
+    <style>
+
+        .to-content{
+            text-decoration: none;
+            padding: 0.5rem;
+            color: #fff;
+            position: absolute;
+            top: -4rem;
+            left: 0;
+            transition: top 1s ease-out;
+            z-index: 100;
+        }
+
+        .to-content:focus{
+            outline: 0 !important;
+        }
+
+        .container {
+            height: auto !important;
+        }
+
+        .collegetype{
+            border: 0;
+            border-radius: 3px;
+            background-color: rgba(255,255,255,0);
+        }
+
+        #site_header {
+            width: 100%;
+            margin: auto;
+        }
+
+        #site_header_content {
+            max-width: 1080px;
+            width: 1080px;
+            margin: auto;
+        }
+
+        .siteLogo {
+            height: 50px;
+        }
+
+        .siteLogo:focus, .thumbnail:focus{
+            display: inline-block;
+            outline: blue solid 3px !important;
+        }
+
+        a:focus,
+        .collegetype:focus,
+        #search_box_pc:focus,
+        .button_search:focus,
+        #course_tab_new:focus,
+        #course_tab_hot:focus {
+            display: inline;
+            outline: blue solid 3px !important;
+        }
+
+        #newsDataRow:focus {
+            display: block;
+            outline: blue solid 3px !important;
+            text-decoration: none;
+        }
+
+        #search_course_keyword{
+            width: 338px;
+            height: 36px;
+            font-size: 15px;
+            margin-top: 15px;
+            -webkit-border-radius: 5px 0px 0px 5px;
+            -moz-border-radius: 5px 0px 0px 5px;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid #ccc;
+            border-style: solid none solid solid;
+        }
+
+        #btn_search {
+            height: 36px;
+            margin-left: -10px;
+            margin-bottom: 3px;
+            -webkit-border-radius: 0px 5px 5px 0px;
+            -moz-border-radius: 0px 5px 5px 0px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .navbar-nav-item-background {
+            border-radius: 30px;
+            width: 110px;
+            background: rgba(100%,100%,100%,0.3);
+        }
+
+        .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+            background-color: transparent;
+        }
+
+        .nav>li>a:focus, .nav>li>a:hover {
+            background-color: transparent;
+        }
+
+        .site_keyword {
+            font-size: 14px;
+            color: #393939;
+            padding-left:5px;
+            padding-right:5px;
+            cursor: pointer;
+        }
+
+        .button_search {
+            font-family: "微軟正黑體";
+            font-size: 16px;
+            color: #fff;
+            height: 40px;
+            width: 40px;
+            border: 1px rgba(255,255,255,0.5) solid;
+            border-radius: 3px;
+            background-color: rgba(255,255,255,0);
+        }
+
+        #div_username {
+            padding-right: 0px;
+            line-height: 32px;
+        }
+
+        .show-username {
+            white-space: nowrap;
+            overflow: hidden;
+            overflow:-moz-hidden-unscrollable;
+            text-overflow: ellipsis;
+            max-width: 120px;
+            font-size:1.2em;
+            color:#FFFFFF;
+            padding:0px 6px 6px 6px;
+            display: inline-flex;
+        }
+
+        @supports (-webkit-overflow-scrolling: touch) {
+
+            .fa-search {
+                margin-left:-5px;
+            }
+
+		    .adjust {
+		        margin-left:-7px;
+		    }
+		}
+
+        /* desktop */
+        @media (min-width: 1320px) {
+        }
+
+        .search_box::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1; /* Firefox */
+        }
+
+        .search_box:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: white;
+        }
+
+        .search_box::-ms-input-placeholder { /* Microsoft Edge */
+            color: white;
+        }
+
+        #menu_lang {
+            z-index: 1000;
+            position: absolute;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0,0,0,.15);
+            border-radius: 4px;
+            background-color: #fff;
+            left: 30%;
+            margin-top: -10px;
+        }
+
+        #menu_lang .lang {
+            height: 42px;
+            line-height:42px;
+            border-bottom: 1px #E3E3E3 solid;
+            font-size: 16px;
+            padding:0 25px;
+        }
+
+        /*平板直向、平板橫向*/
+        @media (min-width: 768px) and (max-width: 992px) {
+
+        }
+
+        @media (max-width: 767px) {
+            #site_header_content {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .but_login {
+                width: initial;
+            }
+
+            .but_registered {
+                width: initial;
+            }
+
+            #search_bar_phone {
+                border: 5px solid rgb(5,178,146);
+                margin: 0 auto;
+                padding-left: 0px;
+                background: #ffffff;
+            }
+
+            .search_box {
+                color: #666666 !important;
+                float: left;
+            }
+
+            .search_box::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #666666;
+                opacity: 1; /* Firefox */
+            }
+
+            .search_box:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #666666;
+            }
+
+            .search_box::-ms-input-placeholder { /* Microsoft Edge */
+                color: #666666;
+            }
+
+        }
+
+        /*大手機尺寸*/
+        @media (min-width: 375px) and (max-width: 767px) {
+            .nav_search {
+                height: 50px;
+            }
+
+            #site_header_login_bar_phone {
+                margin-top: 5px;
+            }
+
+            .siteHeaderOuterTable {
+                width: 94%;
+                height:85px;
+            }
+
+            .siteLogo {
+                margin-top:0px;
+            }
+
+            #site_header {
+                width: 100%;
+            }
+
+            .search_box {
+                min-width: 300px;
+            }
+        }
+
+        /*手機尺寸*/
+        @media (max-width: 374px) {
+            .nav_search {
+                height: 50px;
+            }
+
+            #site_header_login_bar_phone {
+                margin-top: 5px;
+            }
+
+            .siteHeaderOuterTable {
+                width: 90%;
+                height:85px;
+            }
+
+            .siteLogo {
+                margin-top:0px;
+            }
+
+            #site_header {
+                width: 100%;
+            }
+
+            .search_box {
+                min-width: 250px;
+            }
+
+            #div_username {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            #imgGotoExplorer {
+                max-width: initial;
+            }
+        }
+
+    </style>
+
+<noscript>
+  <p style="color:red;font-size: 2.5rem;">您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。</p>
+</noscript>
+<div style="margin-top: 10px;">
+    <a tabindex="1" href="#content" id="gotocenter" title="移到主要內容" class="to-content sr-only-focusable"><span style="font-size: 30px;">跳到主要內容</span></a>
+</div>
+<div id="site_header" class="bgBlack">
+    <nav class="navbar navbar-default navigation-clean-button" style="font-size:18px;margin-bottom: 0px;">
+        <div class="container" style="min-width: initial;padding-left: 0px; padding-right: 0px;">
+            <div class="navbar-collapse navbar-left hidden-xs hidden-phone" style="margin-top:5px;">
+                <a title="回首頁" tabindex="2" class="siteLogo" href="/mooc/index.php">
+                    <h1 style="margin: 0;">
+                        <img class="siteLogo" src="https://elearning2.ksu.edu.tw/base/10001/door/tpl/logo.png" alt="回首頁" title="回首頁" border="0">
+                    </h1>
+                </a>
+            </div>
+            <div class="navbar-text navbar-right actions hidden-xs hidden-phone">
+                <ul class="nav navbar-nav">
+                    <li><a title="常見問題(開啟浮動視窗)"  href="javascript:;" onclick="gotoFaqList();" tabindex="3">常見問題</a></li>
+                    <li><a title="下載專區" href="https://elearning2.ksu.edu.tw/mooc/download.php" tabindex="4">下載專區</a></li>
+                    <li><a title="平台使用說明"    href="https://elearning2.ksu.edu.tw/mooc/co_use.php" tabindex="5">平台使用說明</a></li>
+                                            <li><a href="?lang=Big5" tabindex="6">正體中文</a></li><li><a href="?lang=GB2312" tabindex="6">简体中文</a></li><li><a href="?lang=en" tabindex="6">English</a></li>
+                                    </ul>
+            </div>
+                        <div class="row visible-xs hidden-tablet hidden-desktop">
+                <div class="col-xs-9 text-left"><a href="https://elearning2.ksu.edu.tw/mooc/index.php"><img class="siteLogo" src="https://elearning2.ksu.edu.tw/base/10001/door/tpl/logo.png" alt="回首頁" title="回首頁" border="0"></a></div>
+                <div class="col-xs-3 text-center" style="line-height: 50px;">
+                    <i class="fa fa-bars" style="color:#BBBBBB;font-size: 26px;padding-right: 15px;line-height: 50px;" onclick="showPhoneMenu();"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="nav nav_search">
+    <div class="container" style="min-width: initial;padding-left: 0px; padding-right: 0px;height:60px !important;">
+                <div id="site_header_login_bar_phone" class="visible-xs hidden-tablet hidden-desktop">
+            <div class="row col-xs-12">
+                <div class="col-xs-2 text-left" style="padding-left: 5px;">
+                    <a href="javascript:;" onclick="gotoExplorer();return false;"><img id="imgGotoExplorer" alt="學院類別" src="https://elearning2.ksu.edu.tw/theme/default/learn_mooc/coursesorts.png" width="40" height="40"></a>
+                </div>
+                <div class="col-xs-2 text-left" style="padding-left: 5px;">
+                    <button  class="button_search" aria-label="課程搜尋" onclick="showSearchBar();"><i class="fa fa-search" aria-hidden="true" style="font-size:20px;color:#FFFFFF;"></i></button>
+                </div>
+                <div id="div_username" class="col-xs-8 text-right">
+                    <table border="0" cellspacing="0" cellpadding="0" style="float:right;font-size:16px;color:#FFFFFF;">
+                                                    <tr>
+                                <td class="visible-xs" style="font-size:1em;padding-right:10px;"><input type="button" value="登入" class="but_login" onclick="gotoLogin();" /></td>
+                                                            </tr>
+                                            </table>
+                </div>
+            </div>
+            <div id="search_bar_phone" class="row col-xs-12" style="display: none;">
+                <label for="search_box_phone" style="display: none;">課程搜尋</label>
+                <input type="text" id="search_box_phone" value="" class="search_box" placeholder="課程搜尋" onchange="syncSearchBoxVal(this);">
+                <button class="button_search" onclick="doSearch_course();"  aria-label="課程搜尋" style="border-color:#FF720A;width:36px;height: 36px;margin-top:2px;float:right;"><i class="fa fa-search adjust" aria-hidden="true" style="font-size:20px;color:#FF720A;"></i></button>
+            </div>
+        </div>
+
+                <table border="0" cellpadding="0" cellspacing="0" class="nav_box hidden-xs hidden-phone">
+        <tbody><tr>
+          <td width="40"><button class="collegetype" onclick="gotoExplorer();return false;" tabindex="7"><img src="https://elearning2.ksu.edu.tw/theme/default/learn_mooc/coursesorts.png" alt="學院類別" width="40" height="40" title="學院類別"></button></td>
+          <td width="20">&nbsp;</td>
+                    <td width="80%" style="text-align: left">
+            <label for="search_box_pc" style="display: none;">課程搜尋</label>
+            <input type="text" id="search_box_pc" value="" class="search_box"  style="width:700px;margin-bottom: 2px;" placeholder="課程搜尋" onchange="syncSearchBoxVal(this);" tabindex="8">
+            <button class="button_search" onclick="doSearch_course();" aria-label="課程搜尋" tabindex="9"><i class="fa fa-search" aria-hidden="true" style="font-size:20px;color:#FFFFFF;"></i></button>
+          </td>
+          <td width="20"></td>
+          <td><input type="button" value="登入" class="but_login" onclick="gotoLogin();" tabindex="10"></td>
+          <td width="10">&nbsp;</td>
+          <td width="20"></td>
+                            </tr>
+        </tbody></table>
+    </div>
+</div>
+
+<div id="phoneMenu" style="display:none;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="visible-xs">
+        <tr><td class="phoneMenuItem"><a href="https://elearning2.ksu.edu.tw/learn/news/index_faq.php?da75cd652254fce37e953d7f261f132d">常見問題</a></td></tr>
+        <tr><td class="phoneMenuItem"><a href="https://elearning2.ksu.edu.tw/mooc/download.php">下載專區</a></td></tr>
+        <tr><td class="phoneMenuItem"><a href="https://elearning2.ksu.edu.tw/mooc/co_use.php">平台使用說明</a></td></tr>
+        <tr><td class="phoneMenuItem"><a href="?lang=Big5">正體中文</a></td></tr><tr><td class="phoneMenuItem"><a href="?lang=GB2312">简体中文</a></td></tr><tr><td class="phoneMenuItem"><a href="?lang=en">English</a></td></tr>
+                        </table>
+</div>
+<form name="faq_node_list" id="faq_node_list" method="POST" target="faqFrame" style="display: none;">
+    <input type="hidden" name="token" value="d41d8cd98f00b204e9800998ecf8427e">
+    <input type="hidden" name="cid">
+    <input type="hidden" name="bid">
+    <input type="hidden" name="nid">
+</form>
+<form id="siteHeaderSearchForm" name="siteHeaderSearchForm" action="/mooc/explorer.php" method="post" style="display: none;">
+    <input type="hidden" name="keyword" value="">
+</form>
+
+<iframe id="faqFrame" name="faqFrame" style="display: none;" title="呈現常見問題的框架" height="600" width="100%"></iframe>
+
+<script>
+    var server_name = 'elearning2.ksu.edu.tw';
+    var faq_url = '/learn/news/index_faq.php?da75cd652254fce37e953d7f261f132d';
+    
+        var isPhoneMenuVisible = false;
+        function showPhoneMenu() {
+            if ($('#phoneMenu').is(":visible")) {
+                $('#phoneMenu').hide();
+            } else {
+                $('#phoneMenu').show();
+            }
+            isPhoneMenuVisible = $('#phoneMenu').is(":visible");
+        }
+
+        function syncSearchBoxVal(obj) {
+            if ($('#search_box_pc').val() != obj.value){
+                $('#search_box_pc').val(obj.value);
+            }
+            if ($('#search_box_phone').val() != obj.value){
+                $('#search_box_phone').val(obj.value);
+            }
+        }
+
+        function doSearch_course(){
+            if (isPhoneDevice == '1') {
+                adv_search($('#search_box_phone').val());
+            }else{
+                adv_search($('#search_box_pc').val());
+            }
+        }
+
+        function gotoExplorer() {
+            $('<form action="/mooc/explorer.php" method="post"></form>').appendTo('body').submit();
+        }
+
+        function gotoLogin() {
+            top.document.location.href = '/mooc/login.php';
+        }
+
+        function gotoRegister() {
+            top.document.location.href = '/mooc/register.php';
+        }
+
+        function showSearchBar() {
+            if ($('#search_bar_phone').is(":visible")){
+                $('#search_bar_phone').hide();
+            }else{
+                $('#search_bar_phone').show();
+            }
+        }
+
+        function showLang() {
+            if ($('#menu_lang').is(":visible")){
+                $('#menu_lang').hide();
+            }else{
+                $('#menu_lang').show();
+            }
+        }
+
+        function gotoFaqList() {
+            var from = 'faq';
+
+            if (navigator.userAgent.match(/(iPad)/i)) {
+                $("form[name='faq_node_list']").prop('action', faq_url);
+    		    $("form[name='faq_node_list']").prop('target', '_blank');
+    		    $("form[name='faq_node_list']").submit();
+    	    } else {
+    	        var objForm = document.getElementById('faq_node_list');
+    	        objForm.action = faq_url;
+	            $.fancybox.open("#faqFrame", {
+	                maxWidth: 960,
+	                fitToView: false,
+	                width: '100%',
+	                autoSize: false,
+	                'titlePosition': 'inline',
+	                'transitionIn': 'none',
+	                'transitionOut': 'none',
+	                'closeBtn': true,
+	                'scrolling': 'no',
+	                beforeShow: function(){
+	                    $("body").css({'overflow-y':'hidden'});
+	                    $("#faqFrame").css({'width' : '100%'});
+	                },
+	                afterClose: function(){
+	                    $("body").css({'overflow-y':'visible'});
+	                },
+	                helpers : {
+	                    overlay : {
+	                        locked : false
+	                    }
+	                }
+	            });
+	            objForm.submit();
+            }
+
+        }
+
+        $(function () {
+            $(window).resize(function () {
+                var width = $('#realname').width();
+                $('#realname').parent('td').width(width + 80 + 'px');
+            }).resize();
+            $('.dropdown-toggle').dropdown();
+        });
+    
+</script>
+<script language="javascript" src="https://elearning2.ksu.edu.tw/public/js/common.js"></script>
+<script language="javascript" src="https://elearning2.ksu.edu.tw/mooc/public/js/search.js?1234"></script>
+<script language="javascript" src="https://elearning2.ksu.edu.tw/mooc/public/js/site_header.js"></script><style>
+
+#loginBlockContainer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#loginBlockContainer > .container {
+    width: 266px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#course-tabs {
+    max-width: 266px;
+}
+
+.alert {
+    padding: 0px;
+    margin-top: 20px;
+    color: #FF0000;
+}
+
+#main {
+    min-height: calc(100vh - 310px);
+}
+
+.input-text {
+    width:266px;
+    border:1px #edf1f2 solid;
+    border-radius:3px;
+    background-color:#edf1f2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.input-text::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 14px;
+    color: #9da0a4;
+    opacity: 1; /* Firefox */
+}
+
+.input-text:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 14px;
+    color: #9da0a4;
+}
+
+.input-text::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 14px;
+    color: #9da0a4;
+}
+
+.t14_b {
+    font-size: 14px !important;
+    color: #9da0a4;
+}
+
+.fb-icon {
+    margin-bottom: -4px;
+}
+
+#buttonLoginByAccount {
+    width:100%;
+    height:45px;
+    border:1px #15bc97 solid;
+    border-radius:3px 0px 0px 3px;
+    background-color:#15bc97;
+}
+
+#buttonLoginByQrcode {
+    width:100%;
+    height:45px;
+    border:1px #15bc97 solid;
+    border-radius:0px 3px 3px 0px;
+    background-color:#fff;
+}
+
+#captcha-picture {
+    width:100%;
+}
+
+@media (min-width: 1320px) {
+    #loginBlockContainer {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+
+</style>
+<div id="main">
+<div id="loginBlockHeader">
+    <div class="container" style="max-width: 360px;">
+        <div class="row" style="margin: 0 auto;">
+            <div class="col-md-12 col-xs-12" style="text-align: center;border-bottom: 1px solid #dfdfdf;">
+                <h2><span class="t28">登入</span></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form method="post" action="/login.php" id="loginForm" name="loginForm" onsubmit="return formSubmit();">
+<input type="hidden" name="reurl" value="">
+<input type="hidden" name="login_key" value="42405d254f0e129e5b89fca129fc307b">
+<input type="hidden" name="encrypt_pwd" value="">
+ <input type="hidden" name="password1" value="">
+<div id="loginBlockContainer">
+    <div class="container">
+                <div id="course-tabs" class="row" style="margin:0 auto;">
+            <div class="row" style="padding: 0px; margin: 0px;">
+                <div class="col-md-12 col-xs-12" style="padding:0px;"><input id="buttonLoginByAccount" type="button" class="t16_w_b" style="" value="使用KSU.ID登入" onclick="showLoginByAccount();"></div>
+                <!--
+                <div class="col-md-6 col-xs-6" style="padding:0px;max-width:133px;"><input id="buttonLoginByQrcode" type="button" class="t16_b" style="" value="QR code登入" onclick="showLoginByQrcode();"></div>
+                -->
+            </div>
+        </div>
+                        </div>
+    <div id="divLoginByAccount" class="container">
+        <div class="row" style="float: right; margin-right: 0;">
+            <a href="https://my.ksu.edu.tw/utility/userLogin/forgotPassword.aspx">忘記密碼?</a>
+        </div>
+        <div class="row" style="margin:0 auto;">
+            <input type="text" id="username" name="username" class="t14_b input-text" placeholder="KSU.ID" value="">
+        </div>
+        <div class="row" style="margin:0 auto;">
+            <input type="password" id="password" name="password" class="t14_b input-text" placeholder="密碼">
+        </div>
+
+        	<!--
+        <div class="row" style="margin:0px;margin-top:15px;text-align: left;">
+                                        <span style="text-align:left"><input type="checkbox" name="persist_login" value="1" style="margin:0 2px;" /></span>
+                                        <span>記住我，保持登入</span>
+        </div>
+        <div class="row" style="margin:0px;margin-top:10px;text-align: left;">
+            <span class="t13_o">為了避免個資被盜用，請勿在公用電腦或裝置選勾此項。</span>
+        </div>
+	-->
+        <div class="row" style="margin:0 auto;margin-top:15px;">
+            <button type="submit" class="t18_w" style="width:100%;height:45px;border:1px #15bc97 solid;border-radius:3px;background-color:#15bc97;" id="btnSignIn">登入</button>
+        </div>
+	    </div>
+    <div id="divLoginByQrcode" class="container" style="margin-top: 30px;margin-bottom: 30px;display: none;">
+        <div class="row" style="width:228px;margin:0 auto;">
+            <div class="col-md-12 col-xs-12" style="width:228px;height:228px;border:8px solid #DFDFDF;padding:0px;">
+                <iframe id="iframe-qrcode" src="about:blank" scrolling="no" style="padding:0px;width:214px;height:214px;border:0px;margin:0px;"></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+</form>
+</div>
+<form method="post" action="message.php?type=5" id="msgForm" name="msgForm">
+    <input type="hidden" name="action" value="resend">
+    <input type="hidden" name="login_key" value="42405d254f0e129e5b89fca129fc307b">
+    <input type="hidden" name="username" value="">
+    <input type="hidden" name="email" value="">
+    <input type="hidden" name="encemail" value="">
+</form>
+
+<script language="javascript" src="https://elearning2.ksu.edu.tw/lib/md5.js"></script>
+<script language="javascript" src="https://elearning2.ksu.edu.tw/lib/des.js"></script>
+<script language="javascript" src="https://elearning2.ksu.edu.tw/lib/base64.js"></script>
+<script language="javascript" src="https://elearning2.ksu.edu.tw/sys/tpl/login.js?1775549998"></script>
+<script language="javascript">
+    var
+        MSG_NEED_USERNAME = '請輸入帳號';
+        MSG_NEED_PASSWORD = '請輸入密碼';
+        MSG_NEED_CAPTCHA  = '請輸入圖形驗證碼';
+        MSG_CAPTCHA_ERROR = '圖形驗證碼錯誤';
+        QrcodeLoginTimer = null;
+        QrcodeLoginTries = 0;
+</script>
+
+
+<script language="javascript">
+    
+    function QrcodeLoginTimerCheck() {
+        QrcodeLoginTries++;
+        if (QrcodeLoginTries > 36) {
+            showLoginByAccount();
+            return false;
+        }
+        $.ajax({
+            'type': 'POST',
+            'dataType': 'json',
+            'data': {'action' : 'checkQrcodeLogin'},
+            'url': appRoot + 'https://elearning2.ksu.edu.tw/mooc/controllers/user_ajax.php',
+            'async': false,
+            'success': function (data) {
+
+                if (parseInt(data.code) == 1){
+                    clearInterval(QrcodeLoginTimer);
+                    document.location.replace('https://elearning2.ksu.edu.tw/mooc/index.php');
+                }
+            },
+            'error': function () {
+                clearInterval(QrcodeLoginTimer);
+            }
+        });
+    }
+
+    function showLoginByAccount() {
+        clearInterval(QrcodeLoginTimer);
+        $('#buttonLoginByAccount').css('background-color', '#15bc97');
+        $('#buttonLoginByAccount').css('color', '#FFFFFF');
+        $('#buttonLoginByAccount').css('font-weight', 'bold');
+        $('#buttonLoginByQrcode').css('background-color', '#FFFFFF');
+        $('#buttonLoginByQrcode').css('color', '#000000');
+        $('#buttonLoginByQrcode').css('font-weight', 'initial');
+        $('#divLoginByQrcode').hide();
+        $('#divLoginByAccount').show();
+    }
+
+    function showLoginByQrcode() {
+        $('#buttonLoginByAccount').css('background-color', '#FFFFFF');
+        $('#buttonLoginByAccount').css('color', '#000000');
+        $('#buttonLoginByAccount').css('font-weight', 'initial');
+        $('#buttonLoginByQrcode').css('background-color', '#15bc97');
+        $('#buttonLoginByQrcode').css('color', '#FFFFFF');
+        $('#buttonLoginByQrcode').css('font-weight', 'bold');
+        getLoginQrcode4meUrl();
+        $('#divLoginByQrcode').show();
+        $('#divLoginByAccount').hide();
+    }
+
+    function getLoginQrcode4meUrl() {
+        var rtn = '';
+        $.ajax({
+            'type': 'POST',
+            'dataType': 'json',
+            'data': {'action' : 'LoginQrcode4me'},
+            'url': 'https://elearning2.ksu.edu.tw/mooc/controllers/user_ajax.php',
+            'async': false,
+            'success': function (data) {
+                if (parseInt(data.code) == 1){
+                    rtn = data.data;
+                    $('#iframe-qrcode').attr('src', rtn);
+                    QrcodeLoginTimer = setInterval(function(){ QrcodeLoginTimerCheck() }, 5000);
+                    QrcodeLoginTries = 0;
+                }else{
+                    rtn = 'about:blank';
+                }
+            },
+            'error': function () {
+                rtn = 'about:blank';
+            }
+        });
+    }
+
+    $(function () {
+        $('#username').focus();
+        $('#iframe-qrcode').on("load", function() {
+            $('#iframe-qrcode').get(0).contentWindow.document.getElementsByTagName("body")[0].style.margin = '0px';
+        });
+    });
+
+    function formSubmit() {
+        $('.alert').remove();
+        var check = checkLogin();
+        if (check === false) {
+            return false;
+        } else {
+            var check2 = checkTmpAccount();
+            if (check2 === false) {
+                // $('#msgForm').submit();
+                // location.href = '/mooc/login.php';
+                // return false;
+            } else if (check2 === -1) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+    }
+
+    // 確認帳號是否驗證
+    function checkTmpAccount() {
+        var rn = false;
+        $.ajax({
+            'type': 'POST',
+            'dataType': 'json',
+            'data': $('#loginForm').serialize() + '&action=getTmpAccount',
+            // {'action' : 'getTmpAccount', 'username' : $('#username').val()},
+            'url': appRoot + 'https://elearning2.ksu.edu.tw/mooc/controllers/user_ajax.php',
+            'async': false,
+            'success': function (data) {
+                data = json2array(data);
+                switch(data[0].code) {
+                    case 1:
+                        rn = false;
+                        $("#msgForm input[name='username']").val(data[0].username);
+                        $("#msgForm input[name='email']").val(data[0].email);
+                        $("#msgForm input[name='encemail']").val(data[0].encemail);
+                        break;
+                    case -1:
+                        rn = -1;
+                        alert(MSG_CAPTCHA_ERROR);
+                        location.href = 'https://elearning2.ksu.edu.tw/mooc/login.php';
+                        break;
+                    case 2:
+                        rn = true;
+                        break;
+                    case 3:
+                        rn = -1;
+                        location.href = 'https://elearning2.ksu.edu.tw/mooc/message.php?type=1';
+                        break;
+                }
+
+            },
+            'error': function (jqXHR, exception) {
+                var msg = 'Connection timed out, please refresh the page.';
+                if (jqXHR.status === 0) {
+                    msg += ' (code:0)';
+                } else if (jqXHR.status == 404) {
+                    msg += ' (code:1)';
+                } else if (jqXHR.status == 500) {
+                    msg += ' (code:2)';
+                } else if (exception === 'parsererror') {
+                    msg += ' (code:3)';
+                } else if (exception === 'timeout') {
+                    msg += ' (code:4)';
+                } else if (exception === 'abort') {
+                    msg += ' (code:5)';
+                } else {
+                    msg += ' (code:6)';
+                }
+                alert(msg);
+            }
+        });
+        return rn;
+    }
+    
+</script>
+</div>
+<style type="text/css">
+    
+        .footer {
+            background-image: none;
+            background-color: #1A1A1A;
+            height: 180px;
+            padding-top:1px;
+            margin-top: 0px;
+        }
+
+        .footer > .container > .top {
+            padding-top: 15px;
+        }
+
+        .infourl {
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+
+        .online {
+            right: 0px;
+            color:#FFFFFF;border-bottom: 1px solid rgb(51, 51, 51);
+            line-height: 42px;
+        }
+
+        .fa-facebook {
+            font-size: 21px;
+            color: #FFFFFF;
+            padding-top: 3px;
+            padding-right: 2px;
+        }
+
+
+        /*手機尺寸*/
+        @media (max-width: 767px) {
+            .footer {
+                min-width: 320px;
+                height: auto;
+            }
+
+            .footer > .narrow > .top > .share {
+                margin-right: 0px;
+                float: left;
+                top: 180px;
+            }
+        }
+
+        /*平板直向、平板橫向*/
+        @media (min-width: 768px) and (max-width: 992px) {
+            .footer {
+                min-width: 320px;
+                height: 240px;
+            }
+
+            .footer > .narrow > .top > .online {
+                padding-left: 30px;
+            }
+
+            .footer > .narrow > .bottom > .info > div {
+                padding-left: 30px;
+            }
+
+            .footer > .narrow > .top > .share {
+                margin-right: 35px;
+            }
+        }
+
+
+
+
+</style>
+<footer class="footer navbar-fixed-bottom">
+    <div class="container">
+        <div class="top row">
+            <div class="col-md-12">
+                <div class="online">
+                    <span class="infourl"><a title="資訊安全政策" href="https://elearning2.ksu.edu.tw/mooc/security.php" style="color: #E9D35A;">資訊安全政策</a>&nbsp;|&nbsp;</span>
+                    <span class="infourl"><a title="隱私權宣告" href="https://elearning2.ksu.edu.tw/mooc/privacy.php" style="color: #E9D35A;">隱私權宣告</a></span>
+                    <a style="margin-left: 3rem;" href="https://accessibility.moda.gov.tw/Applications/Detail?category=20231114114555" title="無障礙網站">
+                        <img style="margin-bottom: 1rem;" src="https://elearning2.ksu.edu.tw/img/A_n.jpg" border="0" width="100" height="35" alt="通過A無障礙網頁檢測" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12" style="margin-top:15px;">
+                <div class="t14_White">洽詢單位：崑山科技大學 電子計算機中心 數位學習組</div>
+                <div class="t14_White">洽詢時間：星期一～星期五（早上 09:00～下午 17:00）</div>
+                <div class="t14_White">服務信箱：<a href="mailto:ksutetg@mail.ksu.edu.tw">ksutetg@mail.ksu.edu.tw</a></div>
+            </div>
+	        <div class="col-md-6 col-xs-12" style="margin-top:15px;">
+                <div class="t14_White">服務電話：(06) 2727-175 #362</div>
+                <div class="t14_White">本校地址：(710303) 台南市永康區崑大路 195 號</div>
+                <div class="t14_White">崑山科技大學 著作權聲明 Copyright &copy; 2019</div>
+            </div>
+	    <!--
+            <div id="index-share-icons" class="col-md-5 col-xs-12" style="margin-top:15px;">
+                <div class="share row">
+                    
+                </div>
+            </div>
+	    -->
+        </div>
+    </div>
+</footer>
+
+<div id="inline-ln" class="inline-ln">
+    <form class="well">
+        <div>LINE分享功能只支援行動裝置</div>
+    </form>
+</div>
+<!--
+<div style="width: auto; height: auto; overflow: auto; position: relative;">
+    <div id="inline-wct" class="inline-wct">
+        <img src="https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl=&choe=UTF-8"/>
+    </div>
+</div>
+
+<!-- Current Page Vendor and Views -->
+<script src="https://elearning2.ksu.edu.tw/sys/tpl/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script src="https://elearning2.ksu.edu.tw/sys/tpl/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js?20170620"></script>
+
+<script language="javascript">
+    var metaDescription = '旭聯科技-15年線上學習專家．50%政府單位佔有率．80%大專院校佔有率．給你最專業、最便利、最多元的線上教學課程。';
+    var metaSitename = encodeURIComponent('崑山網路大學');
+    var iosAppStoreUrl = '';
+    var androidPlayStoreUrl = '';
+    var appPortalRoot = 'SYS_PORTAL_HOME_URL';
+    
+        $(function () {
+            //alert('window:'+$(window).width()+"\n"+'footer:'+$('footer').width());
+        });
+    
+</script>
+<script language="javascript" src="https://elearning2.ksu.edu.tw/mooc/public/js/site_footer.js?20180607"></script><script src="https://elearning2.ksu.edu.tw/lib/enable.js" type="text/javascript"></script>
